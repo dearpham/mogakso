@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      /* .table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      .table tr th,
+      .table tr td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      .striped-table tbody tr:nth-child(odd) {
+        background-color: greenyellow;
+      } */
+
+      .table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 300%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- css를 적용하는 방법 세가지 -->
+    <!-- 1. 인라인 스타일: html시작태그에 style속성을 통해 직접지정 -->
+    <!-- 2. 인터널 css: head 태그 안에 style 태그에 스타일을 지정 -->
+    <!-- 3. external css: 별도의 css 파일을 만들고 head태그 안에 css 파일을 삽입해서 사용 -->
+    <!-- 동일한 클래스명이 나타나면 서로 합침 (단 같은 스타일 속성은 뒤에 나온애로 대체됨) -->
+    <a href="" style="text-decoration: none">뉴진스홈페이지</a>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>연락처</th>
+          <th>이메일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>김민지</td>
+          <td>010-0000-0000</td>
+          <td>fsadjkdlfssa@dsafds.com</td>
+        </tr>
+        <tr>
+          <td>팜하니</td>
+          <td>010-0000-0000</td>
+          <td>fsadjkdlfssa@dsafds.com</td>
+        </tr>
+        <tr>
+          <td>강해린</td>
+          <td>010-0000-0000</td>
+          <td>fsadjkdlfssa@dsafds.com</td>
+        </tr>
+        <tr>
+          <td>이혜인</td>
+          <td>010-0000-0000</td>
+          <td>fsadjkdlfssa@dsafds.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <table class="table striped-table">
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>연락처</th>
+          <th>이메일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>김민지</td>
+          <td>010-0000-0000</td>
+          <td>fsadjkdlfssa@dsafds.com</td>
+        </tr>
+        <tr>
+          <td>팜하니</td>
+          <td>010-0000-0000</td>
+          <td>fsadjkdlfssa@dsafds.com</td>
+        </tr>
+        <tr>
+          <td>강해린</td>
+          <td>010-0000-0000</td>
+          <td>fsadjkdlfssa@dsafds.com</td>
+        </tr>
+        <tr>
+          <td>이혜인</td>
+          <td>010-0000-0000</td>
+          <td>fsadjkdlfssa@dsafds.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

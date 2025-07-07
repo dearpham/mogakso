@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 가상클래스선택자 -->
+    <style>
+      a {
+        text-decoration: none;
+      }
+
+      /* 마우스가 태그위에 올라올 때 */
+      a:hover {
+        color: rgb(255, 255, 255);
+        background-color: yellow;
+      }
+
+      button:hover {
+        color: white;
+        background-color: red;
+      }
+
+      /* 방문한 적이 없는 링크 */
+      a:link {
+        color: blue;
+      }
+
+      /* 방문한 적이 있는 링크 */
+      a:visited {
+        color: green;
+      }
+
+      /* 마우스가 포커스 됐을 때 */
+      input:focus {
+        border: 3px solid red;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      /* 2n, even:  짝수 */
+      /* 2n+1, odd: 홀수 */
+      tbody > tr:nth-child(2n) {
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://naver.com">네이버</a>
+    <a href="https://google.com">구글</a>
+    <a href="https://adsfdasf.com">짭사이트</a>
+    <br />
+    <button>조회</button>
+    <br />
+    <input type="text" />
+    <br />
+    <table>
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>연락처</th>
+          <th>이메일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>유재석</td>
+          <td>010-0000-0000</td>
+          <td>asdfs@dfsaf.com</td>
+        </tr>
+        <tr>
+          <td>김인직</td>
+          <td>010-0000-0000</td>
+          <td>asdfs@dfsaf.com</td>
+        </tr>
+        <tr>
+          <td>송희선</td>
+          <td>010-0000-0000</td>
+          <td>asdfs@dfsaf.com</td>
+        </tr>
+        <tr>
+          <td>팜하니</td>
+          <td>010-0000-0000</td>
+          <td>asdfs@dfsaf.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
