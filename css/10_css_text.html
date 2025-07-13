@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .text-center {
+        text-align: center;
+      }
+      .text-blue {
+        color: blue;
+      }
+
+      .underline {
+        text-decoration: underline;
+      }
+
+      .overline {
+        text-decoration: overline;
+      }
+
+      .delline {
+        text-decoration: line-through;
+      }
+
+      .plain {
+        text-decoration: none;
+      }
+
+      /* text-decoration */
+      /* 4가지 하위 프로퍼티 */
+      /* text-decoration-style: 장식선 스타일(직선, 점선 등) */
+      /* text-decoration-line: 장식종류(밑줄, 윗줄, 가운데줄 등) */
+      /* text-decoration-color: 장식선 색상 */
+      /* text-decoration-thickness: 장식선 두께 */
+
+      .underover {
+        text-decoration: dashed underline overline red 4px;
+        /* text-decoration-style: dashed;
+        text-decoration-line: overline underline;
+        text-decoration-color: red; */
+      }
+
+      /* 모든 알파벳을  대문자로 변환 */
+      .uppercase {
+        text-transform: uppercase;
+      }
+      /* 모든 알파벳을  소문자로 변환 */
+      .lowercase {
+        text-transform: lowercase;
+      }
+
+      /* 영어문장에서 각 단어의 첫 문자만 대문자로 변환 */
+      .capitalized {
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 기본적인 텍스트 관련 스타일링 -->
+    <!-- 텍스트 정렬 -->
+    <h1 class="text-center">가운데 정렬</h1>
+
+    <!-- 텍스트 색상 -->
+    <h1 class="text-blue">파란색</h1>
+
+    <!-- 텍스트 장식선 -->
+    <p class="underline">밑줄을 가진 글씨</p>
+    <p class="overline">윗줄을 가진 글씨</p>
+    <p class="delline">취소선을 가진 글씨</p>
+    <p class="plain">링크인 a태그의 기본값인 밑줄을 없앤 글씨</p>
+    <p class="underover">밑줄과 윗줄 글씨</p>
+
+    <!-- 텍스트 변환 -->
+    <p class="uppercase">abcd</p>
+    <p class="lowercase">ABCD</p>
+    <p class="capitalized">hi my name is hanni pham</p>
+    <input type="text" name="" id="" class="uppercase" />
+    <!-- 자바스크립트 toUpperCase()함수 통해서 실제값도 대문자로 바꿔야함 -->
+  </body>
+</html>

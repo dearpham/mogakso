@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 비디오(video)나 오디오(audio)나 거의 똑같음 -->
+    <!-- src=source -->
+    <!-- control: 비디오 재생, 소리크기 등 조절을 위한 UI -->
+    <!-- autoplay: 자동실행 -->
+    <!-- muted: 음소거 -->
+    <!-- loop: 영상이 끝나면 처음부터 실행 -->
+    <!-- poster : 영상 실행전 보이는 썸네일 이미지 -->
+    <!-- preload: auto, metadata, none -->
+    <!-- auto: 사용자가 영상을 보든 말든 영상을 미리 다운로드. 시청할 확률이 매우높고 영상 플레이햇을때 바로 보여져야하는 중요한 영상  -->
+    <!-- metadata: 영상을 다운로드하지 않고 영상 상영시간과 같은 메타 정보만 미리 가져옴 -->
+    <!-- none: 영상을 다운로드하지 않고 사용자가 영상을 바로 보지 않을 확률이 매우 높은것 서버가 최소한의 트래픽을 유지하고 싶을 때 적용-->
+    <video
+      src="./media/KakaoTalk_20250701_214713629.mp4"
+      width="220px"
+      controls
+      muted
+      loop
+      poster="./img/GhMMZ-YbEAAjaRo.jpg"
+    ></video>
+    <br />
+    <video
+      src="./media/KakaoTalk_20250701_214713629.mp4"
+      width="220px"
+      controls
+    >
+      <track
+        src="./media/newjeans.vtt"
+        kind="subtitles"
+        srclang="ko"
+        label="korean"
+      />
+      <track
+        src="./media/newjeans.vtt"
+        kind="subtitles"
+        srclang="en"
+        label="english"
+      />
+    </video>
+  </body>
+</html>

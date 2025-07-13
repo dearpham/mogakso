@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- css색상 적용방법 -->
+    <!-- 1.색상 명에 해당하는 키워드 사용 -->
+    <h1 style="background-color: blue">파란배경글씨</h1>
+
+    <!-- 2.색상값 사용 -->
+    <!-- rgb값 0~255 -->
+    <h1 style="color: rgb(255, 0, 0)">빨간색</h1>
+    <h1 style="color: rgb(218, 77, 206)">어떤색</h1>
+
+    <!-- 2-2. rgba -->
+    <!-- a-alpha(투명도) 0~1 -->
+    <h1 style="color: rgba(255, 0, 0, 0.5)">빨간색</h1>
+
+    <!-- 3. hex 색상값 -->
+    <!-- 16진수 표기법. 광원(빛의 3원색)인 red, green, blue의 조합으로 표기 -->
+    <!-- 0 -> hex "00" -->
+    <!-- 255-> "FF" -->
+    <h1 style="color: #ff0000">빨간색</h1>
+    <h1 style="color: #000000">검은색</h1>
+
+    <!-- 4. HSL값 -->
+    <!-- 색조(hue) 채도(saturation), 밝기(lightness) 3가지 값으로 구성 -->
+    <!-- 색조 : 0~360, 0과 360은 빨간색, 120은 초록색, 240은 파란색 -->
+    <!-- 채도: 0~100% 0%는 회색음영 -->
+    <!-- 밝기: 0~100% 100% 가장 밝은 값 -->
+    <h1 style="color: hsl(360, 100%, 50%)">빨간색</h1>
+    <h1 style="color: hsl(0, 100%, 50%)">빨간색</h1>
+
+    <!-- 4-2 HSLA (a = alpha) -->
+    <h1 style="background-color: hsla(9, 100%, 64%, 0.1)">쩝</h1>
+  </body>
+</html>
