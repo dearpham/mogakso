@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        border: 3px dotted black;
+
+        /* 안에있는 아이템의 너비가 컨텐츠 너비보다 넓어지면 밑에 줄로 떨구기 위함 */
+        flex-wrap: wrap;
+
+        /* 시작점으로 정렬,  row인 경우에는 왼쪽, row-reverse인 경우는 오른쪽 */
+        /* justify-content: flex-start; */
+
+        /* 반대, 끝점에서 정렬 */
+        /* justify-content: end; */
+
+        /* 가운데 정렬 */
+        justify-content: center;
+
+        /*  */
+      }
+
+      .item {
+        background-color: greenyellow;
+        width: 30px;
+        border: 2px solid blue;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+    </div>
+  </body>
+</html>
